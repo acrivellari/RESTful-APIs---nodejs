@@ -6,3 +6,5 @@ install node v20.17.0
 - fnm use --install-if-missing 20
 
 
+install packages
+- npm install
