@@ -12,7 +12,7 @@ export function generateToken (payload: string | Buffer | object) : string | nul
     };
 
     try{
-        const token = sign(payload, secretKey, options);
+        const token = sign({ name: payload }, secretKey, options);
         return token;
     }
     catch(e)
